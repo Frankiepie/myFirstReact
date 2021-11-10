@@ -11,9 +11,8 @@ function App() {
         <p>
           dunkette jonathan
         </p>
-          <Greet name="anak ni Lord" heroName = "sesuj"/>
-          <Button/>
-        </Greet>
+           <Greet name="anak ni Lord" heroName = "susej"/>
+           <Button/>
         <a
           className="App-link"
           href="https://reactjs.org"

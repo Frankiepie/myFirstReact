@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/myfirstreact/static/css/main.b65393fe.chunk.css",
-    "main.js": "/myfirstreact/static/js/main.c86b3fa9.chunk.js",
-    "main.js.map": "/myfirstreact/static/js/main.c86b3fa9.chunk.js.map",
+    "main.css": "/myfirstreact/static/css/main.5f3178fe.chunk.css",
+    "main.js": "/myfirstreact/static/js/main.95e28443.chunk.js",
+    "main.js.map": "/myfirstreact/static/js/main.95e28443.chunk.js.map",
     "runtime-main.js": "/myfirstreact/static/js/runtime-main.41e769fd.js",
     "runtime-main.js.map": "/myfirstreact/static/js/runtime-main.41e769fd.js.map",
     "static/js/2.569186d0.chunk.js": "/myfirstreact/static/js/2.569186d0.chunk.js",
@@ -10,15 +10,15 @@
     "static/js/3.003b761d.chunk.js": "/myfirstreact/static/js/3.003b761d.chunk.js",
     "static/js/3.003b761d.chunk.js.map": "/myfirstreact/static/js/3.003b761d.chunk.js.map",
     "index.html": "/myfirstreact/index.html",
-    "static/css/main.b65393fe.chunk.css.map": "/myfirstreact/static/css/main.b65393fe.chunk.css.map",
+    "static/css/main.5f3178fe.chunk.css.map": "/myfirstreact/static/css/main.5f3178fe.chunk.css.map",
     "static/js/2.569186d0.chunk.js.LICENSE.txt": "/myfirstreact/static/js/2.569186d0.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/myfirstreact/static/media/logo.6ce24c58.svg",
-    "static/media/App.css": "/myfirstreact/static/media/wp.0b98883f.jpg"
+    "static/media/App.css": "/myfirstreact/static/media/wall.e06ab9a7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.41e769fd.js",
     "static/js/2.569186d0.chunk.js",
-    "static/css/main.b65393fe.chunk.css",
-    "static/js/main.c86b3fa9.chunk.js"
+    "static/css/main.5f3178fe.chunk.css",
+    "static/js/main.95e28443.chunk.js"
   ]
 }

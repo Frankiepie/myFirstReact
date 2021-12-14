@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/myfirstreact/static/css/main.4c21327b.chunk.css",
+    "main.css": "/myfirstreact/static/css/main.a558cb63.chunk.css",
     "main.js": "/myfirstreact/static/js/main.41e9817c.chunk.js",
     "main.js.map": "/myfirstreact/static/js/main.41e9817c.chunk.js.map",
     "runtime-main.js": "/myfirstreact/static/js/runtime-main.41e769fd.js",
@@ -10,7 +10,7 @@
     "static/js/3.003b761d.chunk.js": "/myfirstreact/static/js/3.003b761d.chunk.js",
     "static/js/3.003b761d.chunk.js.map": "/myfirstreact/static/js/3.003b761d.chunk.js.map",
     "index.html": "/myfirstreact/index.html",
-    "static/css/main.4c21327b.chunk.css.map": "/myfirstreact/static/css/main.4c21327b.chunk.css.map",
+    "static/css/main.a558cb63.chunk.css.map": "/myfirstreact/static/css/main.a558cb63.chunk.css.map",
     "static/js/2.569186d0.chunk.js.LICENSE.txt": "/myfirstreact/static/js/2.569186d0.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/myfirstreact/static/media/logo.6ce24c58.svg",
     "static/media/App.css": "/myfirstreact/static/media/wall.e06ab9a7.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.41e769fd.js",
     "static/js/2.569186d0.chunk.js",
-    "static/css/main.4c21327b.chunk.css",
+    "static/css/main.a558cb63.chunk.css",
     "static/js/main.41e9817c.chunk.js"
   ]
 }

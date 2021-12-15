@@ -1,90 +1,88 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import employeeServices from "../services/employeeServices"
-import background from '../imports/wall.jpg';
+import employeeService from "../services/employeeService"
 
 
-const Employee = () => {
-    const[employees, setEmployees] = useState([])
+const Employee = () =>{
 
+    const [employees, setEmployees] = useState([])
+
+    //refresh table
     useEffect(
-        () => {
-            refreshEmployeeTable();
+        () =>{
+          refreshEmployeeTable();
         }
     )
 
-    const refreshEmployeeTable = () =>{
-        employeeServices.getEmployees()
-            .then(
-                response =>{
-                    setEmployees(response.data)
-                }
-            )
-            .catch(
-                () => {
-                    console.log("sorry it stopped working. godbless")
-                }
-            )
-    }
-
-    const deleteEmployee = (employeeId) =>{
-        employeeServices.deleteEmployee(employeeId)
+    const refreshEmployeeTable =() =>{
+        employeeService.getEmployees() //promise
         .then(
             response =>{
-                console.log("Successfully deleted employee!")
+                setEmployees(response.data)
+            }
+        )
+        .catch(
+            () =>{
+                console.log("Error. Sad.")
+            }
+        )
+    }
+
+    const deleteEmployee =(employeeId) =>{
+        employeeService.deleteEmployee(employeeId)
+        .then(
+            response =>{
+                console.log("Successful deletion.")
                 refreshEmployeeTable();
             }
         )
         .catch(
-            error=>{
-                console.error("Something went wrong!", error)
+            error =>{
+                console.error("What went wrong?", error)
             }
         )
     }
+
     return(
-        <div style={{ backgroundImage: `url(${background})`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
-        width: '100vw',
-        height: '100vh'}}>
-        <div>
-            &nbsp; 
-            <h2 class="fw-bold">Members</h2>
-            <div className="container">
-                <table className="table" border = "1" >
-                    <thead className="table table-dark">
-                    <tr>
-                        <td class="fw-bold">Name</td>
-                        <td class="fw-bold">Nickname</td>
-                        <td class="fw-bold">Instrument</td>
-                        <td class="fw-bold">Action</td>
-                    </tr>
-                    </thead>
-                     {
-                         employees.map(
-                            employee => (
-                                <tbody>
-                                <tr className="table-light" key={employee.employeeId}>
-                                    <td>{employee.name}</td>
-                                    <td>{employee.department}</td>
-                                    <td>{employee.location}</td>
-                                    <td>
-                                        <div class="d-grid gap-2 d-md-flex">
-                                            <Link className="btn btn-primary" to={`/myfirstreact/edit/${employee.employeeId}`}>Update</Link>
-                                            <button className="btn btn-danger" onClick={(e) => deleteEmployee(employee.employeeId)}>Delete</button>
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            )
-                         )
-                     }
-                </table>
+        <div className="container">
+            <h3>Lonely Toon Squad </h3>
+            <div>
+            <table  className = "table table-hover table-light table-striped">
+                <thead>
+                <tr class="table-secondary">
+                    <td>Name</td>
+                    <td>Color</td>
+                    <td>Show</td>
+                    <td>Action</td>
+                </tr>
+                </thead>   
+                <tbody>
+                {
+                    employees.map(
+                        employee => (
+                            <tr key={employee.employeeId}>
+                                <td>{employee.name}</td>
+                                <td>{employee.department}</td>
+                                <td>{employee.location}</td>
+                                <td>
+                                    <div className ="d-grid gap-2 d-md-flex">
+                                    <Link className="btn btn-primary" to={`/edit/${employee.employeeId}`}>Update</Link>
+                                    <button className="btn btn-danger" onClick={()=>deleteEmployee(employee.employeeId)}>Delete</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        )
+                    )
+                }
+                </tbody>
+              
+                 </table>
             </div>
         </div>
-        </div>
+        
     )
+
 }
 
 export default Employee

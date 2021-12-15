@@ -1,23 +1,24 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
+import AddEmployee from "./AddEmployee";
+import Employee from "./Employee";
 import Home from "./Home";
 import PageNotFound from "./PageNotFound";
-import Employee from "./Employee";
-import AddEmployee from "./AddEmployee";
 
-const Router = () => {
-    return (
-        <div>
-            <BrowserRouter>
-                <Routes>
-                    <Route exact path ="/myfirstreact" element={<Home/>}/>
-                    <Route exact path="*" element={<PageNotFound/>}/>
-                    <Route exact path="/myfirstreact/employees" element={<Employee/>}/>
-                    <Route exact path="/myfirstreact/add" element={<AddEmployee/>}/>
-                    <Route exact path="/myfirstreact/edit/:employeeId" element={<AddEmployee/>}/>
-                </Routes>
-            </BrowserRouter>
-        </div>
+const Router =() => {
+    return(
+       <div>
+          <HashRouter basename='/'>
+            <Routes>
+                <Route exact path="/" element={<Home/>}/>
+                <Route exact path="/myfirstreact" element={<Home/>}/>
+                <Route exact path="/employees" element={<Employee/>}/>
+                <Route exact path="/add" element={<AddEmployee/>}/>
+                <Route exact path="/edit/:employeeId" element={<AddEmployee/>}/>
+                <Route exact path="*" element={<PageNotFound/>}/>
+            </Routes>
+           </HashRouter>
+       </div>
     )
 }
-
+//add myfirstreact to home
 export default Router

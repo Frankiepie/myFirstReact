@@ -1,20 +1,20 @@
-const NavBar = () => {
+const NavBar =() => {
     return(
         <div>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="/myfirstreact">Lonely Toons</a>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <a class="navbar-brand" href="#">LONELY TOONS</a>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" href="/myfirstreact">My Home</a>
-                            <a class="nav-link" href="/myfirstreact/employees">Members</a>
-                            <a class="nav-link" href="/myfirstreact/add">Add Member</a>
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sad Times</a>
+                            <a class="nav-link" href="/myfirstreact/">Home</a>
+                            <a class="nav-link" href="/myfirstreact/#/employees">Members</a>
+                            <a class="nav-link" href="/myfirstreact/#/add">Add member</a>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </div>
+                    </nav>
+                        </div>
     )
 }
 

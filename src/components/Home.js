@@ -6,7 +6,7 @@ import helloServices from '../services/helloServices';
 import Employee from './Employee';
 import NavBar from './NavBar';
 
-function App() {
+function Home() {
   return (
     <div className="Home">
       <header className="App-header">
@@ -20,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

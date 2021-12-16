@@ -1,6 +1,6 @@
 import React from "react";
 
-class Button extends React.Component {
+class Button extends React.Component{
 
     constructor(){
         super()
@@ -9,22 +9,28 @@ class Button extends React.Component {
         }
     }
 
-    addCounter = () =>{
+    addCounter = () => {
         this.setState(
             {
                 count : this.state.count + 1
             }
-        )
+        );
+
     }
 
-    render(){
-        return (
-        <div>
-            <button class="btn btn-dark" onClick = {this.addCounter}>Click Me!</button>
-            <p class="fw-bold">Sad Boi Reax = {this.state.count}</p>
-        </div>
-        )
-    }
+
+
+render(){
+    return( 
+    <div>
+     <button onClick = {this.addCounter} >Click mo to</button>
+    <p>counts = {this.state.count}</p>
+    </div>
+    );
 }
+
+}
+
+
 
 export default Button

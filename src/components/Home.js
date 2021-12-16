@@ -1,6 +1,6 @@
 import logo from '../logo.svg';
 import '../App.css';
-import Greet  from './Greet';
+
 import Button from './Button';
 import helloServices from '../services/helloServices';
 import Employee from './Employee';

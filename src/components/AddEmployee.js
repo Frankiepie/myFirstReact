@@ -28,7 +28,7 @@ const AddEmployee = () =>{
                     }
                 )
                 }
-         },[]) //add empty array for you to enter to the fields
+         },[])
        
 
    const SaveEmployee = (e) =>{

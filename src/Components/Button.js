@@ -23,7 +23,7 @@ class Button extends React.Component{
 render(){
     return( 
     <div>
-     <button onClick = {this.addCounter} >Click mo to</button>
+     <button class="btn btn-dark" onClick = {this.addCounter} >Click mo to</button>
     <p>counts = {this.state.count}</p>
     </div>
     );

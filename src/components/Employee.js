@@ -7,7 +7,7 @@ const Employee = () =>{
 
     const [employees, setEmployees] = useState([])
 
-    //refresh table
+
     useEffect(
         () =>{
           refreshEmployeeTable();
